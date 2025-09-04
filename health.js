@@ -1,4 +1,4 @@
-function getHealthStatus(character) {
+export function getHealthStatus(character) {
     const health = character.health;
     if (health > 50) {
         return 'healthy';
@@ -8,5 +8,3 @@ function getHealthStatus(character) {
         return 'critical';
     }
 }
-
-module.exports = getHealthStatus;

@@ -1,4 +1,4 @@
-const getHealthStatus = require('./health');
+import { getHealthStatus } from './health.js';
 
 test('Здоровье больше 50 должно быть healthy', () => {
     expect(getHealthStatus({name: 'Маг', health: 90})).toBe('healthy');
